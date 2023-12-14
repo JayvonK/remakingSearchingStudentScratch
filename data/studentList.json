@@ -1,0 +1,39 @@
+{
+    "studentList": [
+        {
+            "firstName": "Giselle",
+            "lastName": "N/A",
+            "email": "something@gmail.com",
+            "age": "17",
+            "number": "2091231231"
+        },
+        {
+            "firstName": "Jayvon",
+            "lastName": "Khuth",
+            "email": "jaykhuth@gmail.com",
+            "age": "18",
+            "number": "2093214321"
+        },
+        {
+            "firstName": "Gea",
+            "lastName": "N/A",
+            "email": "geathecat@gmail.com",
+            "age": "2",
+            "number": "2099999999"
+        },
+        {
+            "firstName": "Qubo",
+            "lastName": "N/A",
+            "email": "idk@gmail.com",
+            "age": "1",
+            "number": "2098888888"
+        },
+        {
+            "firstName": "Cooper",
+            "lastName": "N/A",
+            "email": "iamasleepyfellow@gmail.com",
+            "age": "1/2",
+            "number": "2091231777"
+        }
+    ]
+}
