@@ -13,11 +13,23 @@
 <body>
 
     <div class="container-fluid">
-        <h1 class="txtCenter mb-4" style="font-size: 75px; color: green;">Search for a Student</h1>
-
-        <div class="row center mt-4">
-            <input type="text" placeholder="Search for a student" style="width: 250px;">
-            <button class="btn btn-primary" style="width: 75px;">Search</button>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-6">
+                <h1 class="txtCenter mb-4" style="font-size: 75px; color: green;">Search for a Student</h1>
+                <div class="row center m-4">
+                    <input id="userInput" type="text" placeholder="Search for a student" style="width: 250px;">
+                    <button id="searchBtn" class="btn btn-primary" style="width: 75px;">Search</button>
+                </div>
+                <div class="row" style="margin-top: 100px;">
+                    <h3 id="errorMessage" class="txtCenter" style="color: red;"></h3>
+                    <h3>Name: <span id="studentName" class="result"></span></h3>
+                    <h3>Email: <span id="studentEmail" class="result"></span></h3>
+                    <h3>Age: <span id="studentAge" class="result"></span></h3>
+                    <h3>Number: <span id="studentNumber" class="result"></span></h3>
+                </div>
+            </div>
+            <div class="col"></div>
         </div>
 
     </div>
