@@ -11,7 +11,7 @@ let matchingStudent;
 
 async function StudentListCall(){
     const promise = await fetch('../data/studentList.json');
-    const data = promise.json();
+    const data = await promise.json();
 
     studentList = data.studentList;
 }
@@ -23,7 +23,6 @@ searchBtn.addEventListener('click', function(e){
 function FindStudent(){
     let input = userInput.value.toLowerCase();
 
-    console.log(studentList.length)
 
     for(let i = 0; i < studentList.length; i++){
         let currentStudent = studentList[i];
@@ -36,10 +35,21 @@ function FindStudent(){
     if(matchingStudent){
         studentName.textContent = matchingStudent.firstName + " " + matchingStudent.lastName;
         studentEmail.textContent = matchingStudent.email;
-
+        studentAge.textContent = matchingStudent.age;
+        studentNumber.textContent = matchingStudent.number;
+        errorMessage.textContent = "";
+        console.log("found");
+        matchingStudent = "";
     }else{
         errorMessage.textContent = "Student Not Found";
+        studentName.textContent = "";
+        studentEmail.textContent = "";
+        studentAge.textContent = "";
+        studentNumber.textContent = "";
+        matchingStudent = "";
+        console.log("not found");
     }
+    userInput.value = "";
 }
 
 StudentListCall();
