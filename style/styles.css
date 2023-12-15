@@ -1,4 +1,8 @@
 .txtCenter {
     text-align: center;
-    font-size: 75px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
 }
